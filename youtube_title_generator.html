@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Title Generator - TubeRank Tools</title>
+    <meta name="description" content="Create catchy, click-worthy YouTube video titles with our free local title generator.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased flex flex-col min-h-screen">
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <div class="bg-red-600 text-white p-2 rounded-xl flex items-center justify-center">
+                        <i class="fa-solid fa-play text-sm"></i>
+                    </div>
+                    <span class="text-xl font-bold tracking-tight text-gray-900">TubeRank<span class="text-red-600">Tools</span></span>
+                </a>
+                <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-600">
+                    <a href="index.html" class="hover:text-red-600">Home</a>
+                    <a href="tag-generator.html" class="hover:text-red-600">Tag Generator</a>
+                    <a href="title-generator.html" class="text-red-600 font-semibold">Title Generator</a>
+                    <a href="description-generator.html" class="hover:text-red-600">Description</a>
+                    <a href="keyword-tool.html" class="hover:text-red-600">Keyword Tool</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-4xl mx-auto px-4 py-12 w-full">
+        <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm">
+            <div class="flex items-center space-x-3 mb-6">
+                <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-heading"></i>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold text-gray-900">YouTube Title Generator</h1>
+                    <p class="text-xs text-gray-500">Generate catchy, high-converting video titles instantly.</p>
+                </div>
+            </div>
+
+            <form id="title-form" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 uppercase mb-2">Video Topic or Keyword</label>
+                    <input type="text" id="title-input" placeholder="e.g. Python coding tutorial, fitness workout routine" required class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-red-500 focus:outline-none text-sm">
+                </div>
+                <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-3 rounded-xl transition shadow-sm">
+                    Generate Titles
+                </button>
+            </form>
+
+            <div id="title-results" class="hidden mt-8 space-y-4 pt-6 border-t border-gray-100">
+                <h3 class="font-bold text-gray-900 text-sm">Click-Worthy Title Options</h3>
+                <div id="title-list" class="space-y-3"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 py-6 text-center text-xs text-gray-500">
+        &copy; 2026 TubeRank Tools. All rights reserved.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
